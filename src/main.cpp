@@ -1,3 +1,5 @@
+//sudo apt-get install libsoil-dev libglm-dev libassimp-dev libglew-dev libglfw3-dev libxinerama-dev libxcursor-dev  libxi-dev libfreetype-dev libgl1-mesa-dev xorg-dev
+
 #include <glm/glm.hpp> //sudo apt-get install libglm-dev
 #include "glad.h"
 #include <GLFW/glfw3.h> //sudo apt-get install libglfw3-dev
