@@ -1,0 +1,3 @@
+/home/pc/OpenGL/Purecraft/build/CMakeFiles/Purecraft.dir
+/home/pc/OpenGL/Purecraft/build/CMakeFiles/edit_cache.dir
+/home/pc/OpenGL/Purecraft/build/CMakeFiles/rebuild_cache.dir

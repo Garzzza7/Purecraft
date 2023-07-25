@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/pc/OpenGL/Purecraft/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Purecraft.dir/src/main.cpp.o -c /home/pc/OpenGL/Purecraft/src/main.cpp",
+  "file": "/home/pc/OpenGL/Purecraft/src/main.cpp"
+},
+{
+  "directory": "/home/pc/OpenGL/Purecraft/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/Purecraft.dir/src/glad.c.o -c /home/pc/OpenGL/Purecraft/src/glad.c",
+  "file": "/home/pc/OpenGL/Purecraft/src/glad.c"
+}
+]
