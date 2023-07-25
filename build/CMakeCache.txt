@@ -259,6 +259,9 @@ Purecraft_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Purecraft_SOURCE_DIR:STATIC=/home/pc/OpenGL/Purecraft
 
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=glm_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

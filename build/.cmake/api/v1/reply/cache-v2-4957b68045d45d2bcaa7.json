@@ -1368,6 +1368,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/pc/OpenGL/Purecraft"
+		},
+		{
+			"name" : "glm_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for glm."
+				}
+			],
+			"type" : "PATH",
+			"value" : "glm_DIR-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

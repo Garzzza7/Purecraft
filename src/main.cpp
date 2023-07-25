@@ -1,7 +1,8 @@
+#include <glm/glm.hpp> //sudo apt-get install libglm-dev
 #include "glad.h"
-#include <GLFW/glfw3.h>
-
+#include <GLFW/glfw3.h> //sudo apt-get install libglfw3-dev
 #include <iostream>
+#include "stb_image.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -12,15 +13,19 @@ const unsigned int SCR_HEIGHT = 900;
 
 const char *vertexShaderSource = "#version 330 core\n"
     "layout (location = 0) in vec3 aPos;\n"
+    "out vec4 PENIS;\n"
     "void main()\n"
     "{\n"
     "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+    "   PENIS = vec4(0.5, 0.0, 0.0, 1.0);\n"
     "}\0";
 const char *fragmentShaderSource = "#version 330 core\n"
     "out vec4 FragColor;\n"
+    "in vec4 PENIS;\n"
     "void main()\n"
     "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+    // "   #FragColor = vec4(1.0f, 0.5f, 0.2f, 0.5f);\n"
+    "   FragColor = PENIS;\n"
     "}\n\0";
 
 int main()
@@ -100,9 +105,9 @@ int main()
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f, // left  
+        -0.6f, -0.9f, 0.0f, // left  
          0.5f, -0.5f, 0.0f, // right 
-         0.0f,  0.5f, 0.0f  // top   
+         0.0f,  0.5f, 1.0f  // top   
     }; 
 
     unsigned int VBO, VAO;
@@ -114,7 +119,7 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
     // note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
@@ -130,6 +135,10 @@ int main()
 
     // render loop
     // -----------
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    int nrAttributes;
+    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
     while (!glfwWindowShouldClose(window))
     {
         // input
@@ -169,8 +178,14 @@ int main()
 // ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow *window)
 {
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
         glfwSetWindowShouldClose(window, true);
+    }else if(glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS){
+        std::cout<<"C PRESSED\n";
+    }else if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS){
+        std::cout<<"D PRESSED\n";
+    }
+        
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -179,5 +194,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     // make sure the viewport matches the new window dimensions; note that width and 
     // height will be significantly larger than specified on retina displays.
+    std::cout<<"RESIZE!!!\n";
     glViewport(0, 0, width, height);
 }

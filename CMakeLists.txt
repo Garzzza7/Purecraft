@@ -7,7 +7,8 @@ add_executable(Purecraft
     src/glad.h
     src/glad.c
     )
-
-target_link_libraries(Purecraft glfw
+target_include_directories(Purecraft PUBLIC)
+target_link_libraries(Purecraft 
+    glfw
     OpenGL::GL
 )
