@@ -40,6 +40,12 @@ int main()
 {
     // glfw: initialize and configure
     // ------------------------------
+    int a;
+    float b;
+    char c;
+    printf("asdasdasd");
+    std::string s = "cos";
+    std::cout<<"ASDASDASDASda";
     test();
     test1();
     Pies kokoszka;
