@@ -436,6 +436,13 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/GLFW/glfw3.h \
   ../src/stb_image.h \
   /usr/include/c++/11/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/c++/11/math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
   /usr/include/glm/gtc/matrix_transform.hpp \
   /usr/include/glm/ext/matrix_projection.hpp \
   /usr/include/glm/gtc/constants.hpp \
@@ -485,8 +492,6 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/glm/ext/vector_uint1.hpp \
   /usr/include/glm/ext/vector_uint1_sized.hpp \
   /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/glm/gtc/type_ptr.inl
 
 
@@ -528,6 +533,12 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/glm/ext/matrix_projection.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
 ../src/stb_image.h:
 
 /usr/include/c++/11/sstream:
@@ -555,6 +566,8 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/streambuf:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/include/c++/11/system_error:
 
@@ -1123,6 +1136,8 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/glm/ext/scalar_int_sized.hpp:
 
 /usr/include/glm/detail/type_mat3x2.inl:
+
+/usr/include/c++/11/math.h:
 
 /usr/include/glm/ext/vector_uint2.hpp:
 
