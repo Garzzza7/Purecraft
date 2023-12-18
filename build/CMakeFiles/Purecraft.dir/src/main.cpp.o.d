@@ -303,7 +303,13 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
  /usr/include/GLFW/glfw3.h /home/pc/OpenGL/Purecraft/src/stb_image.h \
- /usr/include/c++/11/stdlib.h /usr/include/glm/gtc/matrix_transform.hpp \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/11/math.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/glm/gtc/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_projection.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \
@@ -347,5 +353,4 @@ CMakeFiles/Purecraft.dir/src/main.cpp.o: \
  /usr/include/glm/ext/vector_int1_sized.hpp \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl
